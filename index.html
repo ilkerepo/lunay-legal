@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#37213F">
+  <meta name="description" content="Lunay uygulamasının veri işleme, saklama, paylaşım ve kullanıcı hakları hakkında gizlilik politikası.">
+  <link rel="canonical" href="https://ilkerepo.github.io/lunay-legal/">
+  <title>Lunay Gizlilik Politikası</title>
+  <style>
+    :root { color-scheme: light; --paper:#fff9f2; --plum:#37213f; --soft:#6f5a74; --gold:#cba66d; --mist:#e9e0f2; }
+    * { box-sizing: border-box; }
+    body { margin:0; color:var(--plum); background:radial-gradient(circle at 12% 8%,var(--mist),transparent 28%),var(--paper); font:16px/1.7 system-ui,-apple-system,sans-serif; }
+    main { width:min(760px,calc(100% - 36px)); margin:48px auto; padding:clamp(26px,6vw,64px); background:rgba(255,255,255,.84); border:1px solid rgba(203,166,109,.45); border-radius:32px; box-shadow:0 24px 70px rgba(55,33,63,.08); }
+    h1,h2 { font-family:Georgia,serif; line-height:1.08; }
+    h1 { font-size:clamp(2.4rem,8vw,4.6rem); margin:0 0 8px; font-weight:500; }
+    h2 { margin-top:2.2rem; font-size:1.6rem; }
+    p,li { color:var(--soft); }
+    .brand { letter-spacing:.34em; color:var(--gold); font-weight:700; font-size:.78rem; }
+    .date { margin-top:0; }
+    a { color:var(--plum); }
+    footer { margin-top:2.4rem; padding-top:1.2rem; border-top:1px solid rgba(203,166,109,.35); font-size:.9rem; }
+  </style>
+</head>
+<body>
+<main>
+  <div class="brand">L U N A Y</div>
+  <h1>Gizlilik Politikası</h1>
+  <p class="date">Yürürlük tarihi: 19 Ağustos 2026</p>
+  <p>Lunay; tarot, astroloji, Ay döngüleri, günlük, ritüel ve isteğe bağlı el falı özellikleri sunan bir kişisel farkındalık uygulamasıdır.</p>
+  <p>Uygulamayı kullanmanın şartları ayrı bir belgede: <a href="terms/">Kullanım Koşulları</a>.</p>
+  <p><strong>Veri sorumlusu:</strong> Erhan Savaşoğlu (bireysel geliştirici), Türkiye. <strong>İletişim:</strong> <a href="mailto:lunaydestek@gmail.com">lunaydestek@gmail.com</a></p>
+  <h2>İşlenen veriler</h2>
+  <ul>
+    <li>Seçilen doğum tarihi, saati ve şehri cihazda saklanır; uzak doğum haritası hesabı için ayrıca açık rıza istenir.</li>
+    <li>Kart okumaları, favoriler, günlük notları, ritüel geçmişi, seri ve tercihler varsayılan olarak cihazda kalır.</li>
+    <li>El fotoğrafı önce cihazda kalite kontrolünden geçer; yapılandırılmış sunucuya gönderilirse tek işlem amacıyla kullanılmalı ve kalıcı kaynak olarak saklanmamalıdır.</li>
+    <li>Mağaza makbuzu ve işlem kimliği yalnız satın alma doğrulaması için işlenir. Ödeme kartı bilgileri Lunay tarafından alınmaz.</li>
+    <li>Bildirimler yalnız kategori tercihi ve işletim sistemi izniyle planlanır.</li>
+    <li>Lunay hesap oluşturmaz ve e-posta adresi istemez; kişisel arşiv hiçbir sunucuya gönderilmez.</li>
+  </ul>
+  <h2>Amaç, saklama ve paylaşım</h2>
+  <p>Veriler yalnız kullanıcının istediği özelliği sunmak, yerel tercihleri korumak, satın alımları doğrulamak ve güvenliği sağlamak için işlenir. Lunay kişisel verileri reklam amacıyla satmaz. Uzak servis kullanılırsa gereken en az veri HTTPS üzerinden gönderilir.</p>
+  <p>Yerel içerik kullanıcı silene veya uygulamayı kaldırana kadar cihazda kalabilir. Geçici el fotoğrafı ve doğum haritası girdileri kalıcı profil oluşturmak için kullanılmamalıdır.</p>
+  <p>Uygulamada hesap ve bulut senkronu <strong>yoktur</strong>. Kartlar, günlükler, ritüeller ve tercihler cihazdan çıkmaz; silmek için uygulamayı kaldırmak ya da <strong>Ayarlar &rarr; Gizlilik ve veriler</strong> ekranındaki silme eylemi yeterlidir.</p>
+  <h2>Kullanıcı seçenekleri</h2>
+  <p><strong>Profil → Ayarlar → Gizlilik ve veriler</strong> alanından cihaz verileri JSON olarak dışa aktarılabilir, doğrulanmış bir Lunay JSON arşivi geri yüklenebilir veya yerel veriler silinebilir. JSON dosyasındaki Plus/kredi değerleri güvenlik nedeniyle içe aktarılmaz. Bildirim kategorileri ayrı ayrı kapatılabilir; kamera, galeri ve bildirim izinleri sistem ayarlarından geri alınabilir.</p>
+  <p>Yerel silme; kartları, notları, doğum bilgilerini, tercihleri ve planlanmış Lunay bildirimlerini kaldırır. Mağaza hesabındaki satın alma kaydı Apple/Google hesabında kalabilir.</p>
+  <h2>Analitik ve çökme raporlama</h2>
+  <p>Uygulama, hangi ekranların kullanıldığını ve nerede hata alındığını anlamak için <strong>Google Firebase Analytics</strong> ve <strong>Firebase Crashlytics</strong> kullanır.</p>
+  <ul>
+    <li><strong>Kullanım olayları:</strong> Ekran açılışları ve tamamlanan akışlar gibi olay adları ve sayıları. Olay parametreleri kapalı bir listeyle sınırlıdır; kişisel içerik — doğum tarihi, günlük notu, kart adı, şehir, isim — analitiğe <strong>hiçbir zaman</strong> parametre olarak geçmez.</li>
+    <li><strong>Cihaz ve uygulama bilgisi:</strong> Uygulama sürümü, cihaz modeli, işletim sistemi sürümü, dil ve IP adresinden türetilen kaba ülke bilgisi. Firebase, cihaz başına rastgele üretilen bir uygulama örneği kimliği kullanır.</li>
+    <li><strong>Çökme raporları:</strong> Uygulama çöktüğünde yığın izi ve çökme anındaki teknik bağlam.</li>
+  </ul>
+  <p>Bu veriler yalnız ürünün hatalarını görmek ve nasıl kullanıldığını anlamak için işlenir; kişisel içerik taşımaz, satılmaz ve reklam hedeflemesinde kullanılmaz. Google bu verileri kendi gizlilik politikası kapsamında işler.</p>
+
+  <h2>Reklamlar</h2>
+  <p>Ücretsiz katmanda bazı okumalar isteğe bağlı ödüllü reklam izlenerek açılabilir. Reklamlar üçüncü taraf bir reklam ortağı (Google AdMob) üzerinden sunulur; bu ortak, reklam gösterimi ve sahtecilik önleme amacıyla cihaz reklam tanımlayıcısı ve IP adresi gibi teknik verileri kendi gizlilik politikasına göre işleyebilir. Kişiselleştirilmiş reklam yalnız gerekli onay verildiğinde gösterilir; onay uygulama içinden geri alınabilir.</p>
+  <p>Plus abonesi olan ya da kredi kullanan kullanıcıya okuma öncesi reklam gösterilmez. Günlük notları, rüyalar, doğum bilgileri ve kart okumaları hiçbir zaman reklam ortağıyla paylaşılmaz.</p>
+  <h2>Çocuklar, güvenlik ve aktarım</h2>
+  <p>Lunay çocuklara yönelik değildir. Uzak servisler yalnız HTTPS olarak kabul edilir; yanıt boyutları ve şemaları doğrulanır. Uluslararası veri aktarımı varsa sağlayıcı sözleşmeleri uygulanabilir güvenceleri içermelidir.</p>
+  <h2>İletişim ve değişiklikler</h2>
+  <p>Önemli değişiklikler yeni yürürlük tarihiyle bu sayfada yayımlanır. Gizlilik talepleri için <a href="mailto:lunaydestek@gmail.com">lunaydestek@gmail.com</a> adresine yazabilirsiniz.</p>
+  <footer>Lunay · Kişisel farkındalık ve eğlence uygulaması · <a href="terms/">Kullanım Koşulları</a></footer>
+</main>
+</body>
+</html>
