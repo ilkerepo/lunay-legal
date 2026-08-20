@@ -23,13 +23,14 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      # `enablement: true` olmadan bu adım, deponun Pages ayarı elle
-      # açılmamışsa düşüyor — ilk koşu tam burada düştü. Bu bayrak Pages'i
-      # iş akışının kendisine açtırıyor, yani depoyu klonlayan biri hiçbir
-      # arayüz ayarı yapmadan yayına alabiliyor.
+      # Bu adım, deponun Pages ayarı kapalıysa düşüyor — ilk iki koşu tam
+      # burada düştü. `enablement: true` denendi ve **çalışamaz**: eylemin
+      # kendi belgesi o girdinin `GITHUB_TOKEN` dışında bir token
+      # gerektirdiğini söylüyor. Tek seferlik bir arayüz ayarı için kalıcı
+      # bir kişisel erişim jetonu saklamak kötü bir takas; ayar bir kez
+      # elle yapılıyor:
+      #   Settings → Pages → Build and deployment → Source: GitHub Actions
       - uses: actions/configure-pages@v5
-        with:
-          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: .
