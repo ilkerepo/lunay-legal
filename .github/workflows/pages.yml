@@ -23,7 +23,13 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+      # `enablement: true` olmadan bu adım, deponun Pages ayarı elle
+      # açılmamışsa düşüyor — ilk koşu tam burada düştü. Bu bayrak Pages'i
+      # iş akışının kendisine açtırıyor, yani depoyu klonlayan biri hiçbir
+      # arayüz ayarı yapmadan yayına alabiliyor.
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: .
